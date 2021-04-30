@@ -44,6 +44,7 @@ body{
     margin: 0 5px;
     -webkit-box-reflect: below 2px linear-gradient(transparent,#0005);
 }
+/* Just adding */
 #alarm-btn,#stop-alarm{
     /* margin-top: 150px;
     margin-left: 130px; */

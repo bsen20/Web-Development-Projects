@@ -27,7 +27,7 @@ function clock(){
 }
 clock()
 disp.style.visibility='visible';
-set_alarm.addEventListener('click',setting_alarm)
+set_alarm.addEventListener('click',setting_alarm)//To set the alarm
 // function timeAdding(){
 //     // disp.style.visibility='vi'
 // }
