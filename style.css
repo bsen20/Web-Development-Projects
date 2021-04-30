@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(55, 12, 155);
+    /* color: white; */
+    /* min-width: 300px; */
+    /* align-items: center; */
+}
+#clock{
+    min-width: 300px;
+    height: 500px;
+    box-sizing: border-box;
+    border: rgb(4, 59, 161) 5px;
+    border-style:dashed;
+}
+#clock h1{
+    color: wheat;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+#clock #time{
+    display: flex;
+    padding: 1rem;
+
+}
+#clock #time div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 2px linear-gradient(transparent,#0005);
+}
+#alarm-btn,#stop-alarm{
+    /* margin-top: 150px;
+    margin-left: 130px; */
+    margin:10px;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: #fff;
+}
+#alarm-btn:hover{
+    background-color: rgb(125, 11, 190);
+}
+#stop-alarm{
+    visibility: hidden;
+    background-color: rgb(218, 198, 26);
+}
+#stop-alarm:hover{
+    background-color: rgb(248, 248, 44);
+}
+#alarm-section{
+    /* z-index: 50; */
+    visibility: hidden;
+    display: flex;
+    color: #fff;
+    margin: 50px 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* align-items: center; */
+}
+#alarm-section div{
+    margin: 0 10px;
+    padding: 0.5rem;
+}
+#alarm-section input{
+    width: 50px;
+}
+#alarm{
+    display:flex;
+    /* bottom: 100px; */
+    justify-content: center;
+    align-items: center;
+    
+}
+#clock #time div span{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(21, 146, 146);
+    color: #fff;
+    display: flex;
+    /* border: black 10px; */
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    z-index: 10;
+    box-shadow:0 0 0 1px rgba(0,0,0,.2);
+}
+#clock #time div span:nth-child(2){
+    height: 30px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    z-index: 9;
+    box-shadow: none;
+    background-color: rgb(8, 105, 105);
+    text-transform: uppercase;
+
+}
+#clock #time div:first-child span{
+    background-color: rgb(110, 187, 9);
+}
+#clock #time div:first-child span:nth-child(2){
+    background-color: rgb(92, 155, 10);
+}
+#clock #time div:last-child span{
+    background: #ff006a;
+}
+#clock #time div:last-child span:nth-child(2){
+    background: #800a3b;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div id="clock">
+        <h1>The Clock </h1>
+
+        <div id="time">
+            <div><span id="hour">00</span><span>Hours</span></div>
+            <div><span id="minutes">00</span><span>Minutes</span></div>
+            <div><span id="seconds">00</span><span>Seconds</span></div>
+            <!-- <div></div><span id="second">00</span><span>Second</span></div> -->
+        </div>
+        <div id="alarm-section">
+            <div class="form-group">
+                <label for="value">Hour</label>
+                <input type="text" name="hour" id="alarm_hr" placeholder="00">
+            </div>
+            <div class="form-group">
+                <label for="value">Minutes</label>
+                <input type="text" name="minutes" id="alarm_min" placeholder="00">
+            </div>
+            
+            
+        </div>
+        <div id="alarm">
+            <button id="alarm-btn">Set Alarm</button>
+            <!-- <button id="alarm-btn-stop">Stop Alarm</button> -->
+        </div>
+        <div id="alarm">
+            <!-- <button id="alarm-btn">Set Alarm</button> -->
+            <button id="stop-alarm">Stop Alarm</button>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
